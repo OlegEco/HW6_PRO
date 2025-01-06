@@ -1,0 +1,22 @@
+﻿@using HW6_PRO.Models
+@model List<ProgrammingLanguage>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Programming Language</title>
+</head>
+<body>
+    <h1>Programming language</h1>
+    <ul>
+        @foreach (var lang in Model)
+        {
+            <li>
+                <a href="/Programming/Info/@lang.Name">
+                    @lang.Name
+                </a>
+            </li>
+        } 
+    </ul>
+</body>
+</html>

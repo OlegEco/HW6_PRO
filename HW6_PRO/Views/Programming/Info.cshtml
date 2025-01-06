@@ -1,0 +1,26 @@
+﻿@using HW6_PRO.Models
+@model ProgrammingLanguage
+
+@{
+    var color = ViewBag.Color;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@Model.Name</title>
+    <style>
+        h1 {
+            color: @color;
+        }
+    </style>
+</head>
+<body>
+    <h1>@Model.Name</h1>
+    <h1>@Model.Description</h1>
+    <p><strong>ExampleCode:</strong></p>
+    <pre>@Model.ExampleCode</pre>
+    <a href="@Url.Action("Index","Programming")">Return to List language</a>
+    </style>
+</body>
+</html>

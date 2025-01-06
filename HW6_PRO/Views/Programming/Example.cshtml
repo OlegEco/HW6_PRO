@@ -1,0 +1,14 @@
+﻿@using HW6_PRO.Models
+@model ProgrammingLanguage
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Пример кода на @Model.Name</title>
+</head>
+<body>
+    <h1>Пример кода на @Model.Name</h1>
+    <pre>@Model.ExampleCode</pre>
+    <a href="@Url.Action("Index", "Programming")">Back to languages list</a>
+</body>
+</html>
